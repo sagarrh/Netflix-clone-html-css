@@ -1,0 +1,251 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background: black;
+    color: white;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./netflix-img/images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+    
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+#logo{
+    width:200px;
+
+}
+nav button{
+    border:0px;
+    color: white;
+    background-color: rgb(231, 16, 16);
+    outline: 0px;
+    padding: 8px 15px;
+    font-size: 12px;
+    margin-left:10px;
+    border-radius: 3px; 
+}
+.butt{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 1px solid white;
+
+}
+.butt img{
+    position: relative;
+    left: 7px;
+    width: 10px;
+   
+}
+.header-content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin-top: 100px;
+}
+.header-content h1{
+    font-size: 60px;
+    text-align: center;
+    max-width: 600px;
+   line-height: -20px;
+    font-weight: 60px;
+}
+.header-content h3{
+   
+    font-weight: 300;
+    text-align: center;
+    margin-top: 10px;
+
+
+}
+.header-content p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.netlixform{
+    background: white;
+    border-radius: 4px;
+   display:flex;
+    align-items: center;
+    overflow:hidden;
+    margin-top: 20px;
+
+}
+.netlixform input{
+    flex:1;
+    margin-left: 20px;
+    border: 0px;
+    outline:0px;
+ 
+
+}
+.netlixform button{
+    background: rgb(215, 16, 16);
+    border:0px;
+    outline:0px;
+    padding:15px 20px;
+    color:white;
+    font-size: 15px;
+
+    
+}
+.features{
+    padding:50px 12%;
+    font-size:25px;
+}
+.features h1{
+    margin-bottom: 20px;
+}
+.row{
+   
+        display:flex;
+        width: 100%;
+        align-items: center;
+        padding:50px 0;
+}
+.row-text{
+   padding: 0px 90px;
+}
+.img img{
+   width: 500px;
+   
+}
+.faq{
+    padding: 10px 12%;
+    
+    text-align: center;
+
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+.accordion{
+    margin:60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordion li{
+    list-style: none;]
+    width: 100%;
+    padding:5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    position:relative;  
+
+}
+label::after{
+    content:'+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+   
+    
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    background:#303030;
+    text-align: left;
+    padding: 0px 20px;
+    max-height: 0px;
+    overflow:hidden;
+    transition: max-height 0.7s,padding 0.4s;
+}
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding:30px 20px;
+}
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(90deg);
+}
+small{
+    font-weight: 400;
+    font-size: larger;
+}
+
+.faq .netlixform{
+   
+    max-width: 500px;
+    margin:20px auto 60px;
+}
+
+.footer{
+    padding: 50px 15%;
+    border-top: 6px solid #414141;
+    color: #c6bebe;
+}
+.footer h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    color: #848383;
+    margin-bottom: 15px;
+    
+    font-size: medium;
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;;
+}
+.newbutton{
+    padding: 5px 15px;
+    background: #070707;
+    border: 1px solid grey;
+    outline: none;
+    border-radius: 2px;
+    color: white;
+    font-size: 17px;
+}
+.newbutton img{
+    width: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3px;
+    margin-bottom: 3px;
+}
+.footer p{
+    margin-top: 20px;
+}
+
+@media only screen and (max-width:600px){
+    #logo{
+        width: 100px;
+    }
+}
+
